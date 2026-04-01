@@ -135,11 +135,11 @@ def generate_launch_description():
         ),
 
         # Dock description
-        IncludeLaunchDescription(
-            PythonLaunchDescriptionSource([dock_description_launch]),
-            # The robot starts docked
-            launch_arguments={'gazebo': 'ignition'}.items(),
-        ),
+        # IncludeLaunchDescription(
+        #     PythonLaunchDescriptionSource([dock_description_launch]),
+        #     # The robot starts docked
+        #     launch_arguments={'gazebo': 'ignition'}.items(),
+        # ),
 
         # Spawn TurtleBot 4
         Node(
